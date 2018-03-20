@@ -409,39 +409,39 @@ $ sudo n stable
 var timer = setInterval(hideElement, 100);
 
 
-
+//TODO check other domain and other url pattern for mark slide name
 function hideElement(){
     
     var currentLocation = window.location;
-    if(currentLocation =="http://localhost/t/deck.js/introduction/#Begin"){
+    if(currentLocation =="https://rezaduty.github.io/ionic-present/introduction/#Begin"){
       document.getElementById( 'subject_box' ).style.display = 'none';
     }
-    else if(currentLocation =="http://localhost/t/deck.js/introduction/"){
+    else if(currentLocation =="https://rezaduty.github.io/ionic-present/introduction/"){
       document.getElementById( 'subject_box' ).style.display = 'none';
     }
-    else if(currentLocation =="http://localhost/t/deck.js/introduction/#goodby"){
+    else if(currentLocation =="https://rezaduty.github.io/ionic-present/introduction/#goodby"){
       document.getElementById( 'subject_box' ).style.display = 'none';
     }
     
     else{
       document.getElementById( 'subject_box' ).style.display = 'block';
-      if(currentLocation =="http://localhost/t/deck.js/introduction/#whatisionic"){
+      if(currentLocation =="https://rezaduty.github.io/ionic-present/introduction/#whatisionic"){
         document.getElementById('whatisionicc').style.color="#4d8df6";
       }
-      else if(currentLocation=="http://localhost/t/deck.js/introduction/#how-to-overview"){
+      else if(currentLocation=="https://rezaduty.github.io/ionic-present/introduction/#how-to-overview"){
         document.getElementById('how-to-overvieww').style.color="#4d8df6"; 
       }
-      else if(currentLocation=="http://localhost/t/deck.js/introduction/#whyionic&javascript"){
+      else if(currentLocation=="https://rezaduty.github.io/ionic-present/introduction/#whyionic&javascript"){
         document.getElementById('whyionic&javascriptt').style.color="#4d8df6"; 
       }
-      else if(currentLocation =="http://localhost/t/deck.js/introduction/#installation"){
+      else if(currentLocation =="https://rezaduty.github.io/ionic-present/introduction/#installation"){
         document.getElementById('installationn').style.color="#4d8df6";
       }
-      else if(currentLocation=="http://localhost/t/deck.js/introduction/#structure"){
+      else if(currentLocation=="https://rezaduty.github.io/ionic-present/introduction/#structure"){
         document.getElementById('structuree').style.color="#4d8df6";
-      }else if(currentLocation =="http://localhost/t/deck.js/introduction/#serve"){
+      }else if(currentLocation =="https://rezaduty.github.io/ionic-present/introduction/#serve"){
         document.getElementById('servee').style.color="#4d8df6";
-      }else if(currentLocation=="http://localhost/t/deck.js/introduction/#folder-structure"){
+      }else if(currentLocation=="https://rezaduty.github.io/ionic-present/introduction/#folder-structure"){
         document.getElementById('folder-structuree').style.color="#4d8df6";
       }
       else{
