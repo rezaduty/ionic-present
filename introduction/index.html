@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Ionic Present</title>
+
+  <meta name="description" content="A jQuery library for modern HTML presentations">
+  <meta name="author" content="Caleb Troughton">
+  <meta name="viewport" content="width=1024, user-scalable=no">
+
+  <!-- Core and extension CSS files -->
+  <link rel="stylesheet" media="screen" href="../core/deck.core.css">
+  <link rel="stylesheet" media="screen" href="../extensions/goto/deck.goto.css">
+  <link rel="stylesheet" media="screen" href="../extensions/menu/deck.menu.css">
+  <link rel="stylesheet" media="screen" href="../extensions/navigation/deck.navigation.css">
+  <link rel="stylesheet" media="screen" href="../extensions/status/deck.status.css">
+  <link rel="stylesheet" media="screen" href="../extensions/scale/deck.scale.css">
+
+  <!-- Style theme. More available in /themes/style/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="../themes/style/web-2.0.css">
+
+  <!-- Transition theme. More available in /themes/transition/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="../themes/transition/horizontal-slide.css">
+
+  <!-- Basic black and white print styles -->
+  <link rel="stylesheet" media="print" href="../core/print.css">
+
+  <script src="../modernizr.custom.js"></script>
+
+  <style type="text/css">
+
+    @font-face {
+      font-family: "Khandevane";
+      src: url(fonts/Khandevane.ttf) format("truetype");
+    }
+    @font-face {
+      font-family: "A-MehdiHeydari";
+      src: url(fonts/A-MehdiHeydari.ttf) format("truetype");
+    }
+    .cssreflections h2{
+      color: #4d8df6;
+    }
+    h1, h2, h3, h4, h5, h6{
+      font-family: "Hoefler Text", Constantia, Palatino, "Palatino Linotype", "Book Antiqua", Georgia,A-MehdiHeydari, serif;
+      color: #4d8df6;
+    }
+    h1,h2 { font-family: "Khandevane", sans-serif,"A-MehdiHeydari", sans-serif;float: right;direction: rtl; }
+    h4 {font-family: "Khandevane", sans-serif;float: right; } 
+    p { font-family: "A-MehdiHeydari", sans-serif ;float: right; font-size: 19px;}
+    .bottom{
+    float: right;
+    width: 73%;
+    height: 100%;
+    direction: rtl;
+    }
+    em{
+      color: rgba(0, 0, 0, 0.7);
+    }
+    .example{
+
+      margin-top: 8px;
+
+    }
+    .link{
+      float: inherit;
+      }
+      body{
+      background: url('img/ba.png');
+      background-repeat: repeat;
+    }
+    .cssreflections h1, h2, h3, h4, h5, h6{
+      color: #4d8df6;
+      direction: rtl;
+    }
+    h1, h2, h3, h4, h5, h6{
+      color:#b9d4ff;
+    }
+    p{
+      color: #ffffff;
+      font-size: 25px;
+    }
+    em{
+      color: rgb(0, 192, 255);
+    }
+    pre{
+      background: #1e2729;
+    }
+    code{
+      color: #06a96f;
+    }
+    .cssreflections h2{
+      direction: rtl;
+    }
+    .timerr{
+      font-family: 'A-MehdiHeydari', sans-serif ;
+      color: #e9f5ff; 
+    } 
+.subject_box{
+  width: 28%;
+  height: 40%;
+  position: absolute;
+  top: 18%;
+  background-color:rgba(0, 0, 0, 0.38);
+  margin-bottom: 1px;
+  direction: rtl;
+  z-index: 33;
+
+}
+.subject_box p{
+  margin-bottom: 1px;
+}
+.slide p{
+  margin-bottom: 1px;
+}
+.bo p{
+  font-family: "Khandevane", sans-serif,"A-MehdiHeydari", sans-serif; 
+  float: inherit;
+} 
+</style>
+</head>
+
+<body>
+  <div class="deck-container">
+
+
+    <!-- Begin slides -->
+
+    <section class="slide" id="Begin">
+      <center><h1>بسم الله الرحمن الرحیم</h1></center>
+    </section>
+    <section class="slide" id="whatisionic">
+      <h1 style="left: 9%;"> Ionic چیست؟ </h1>
+    </section>
+
+    <section class="slide" id="how-to-overview">
+      <h2>مقدمه ای بر ionic</h2>
+     <div class="bottom"> 
+      <h6>ionic یک فریمورک جاوااسکریپت برای تولید برنامه موبایل است</h6><br>
+        <p>Ionic یک فریم ورک برای توسعه برنامه است که با استفاده از کتابخانه محبوب <em>AngularJS</em> درست شده است. AngularJS یک کتابخانه <em>MVC</em> است که برای ساخت برنامه های تک صفحه ای برای وب و موبایل کاربرد دارد. Ionic یک محصول از <em>Drifty</em> است که به عنوان استارتاپ در سیلیکن ولی شروع به کار کرد.</p>
+        <center> 
+         <img src="img/Ionic_Logo.svg-768x267.png" >
+        </center>
+      </div>
+    </section>
+
+
+ <section class="slide" id="whyionic&javascript">
+    <h2>اصلا چرا javascript و ionic</h2>
+     <div class="bottom">
+      <ol> 
+      <h6>چرا javascript ?</h6><br>
+        <ul>
+          <li class="slide timerr" id="extensions-goto">
+              <strong>java&nbsp;&nbsp;</strong>اگر با java آشنایی ندارید بد نیست به سراغ  javascript بروید
+            </li>
+
+            <li class="slide timerr" id="extensions-menu">
+              <strong>سخت افزار مناسب&nbsp;&nbsp;</strong>اگر سخت افزار مناسب ندارید بد نیست با javascript به مقصود خود برسید
+            </li>
+
+            <li class="slide timerr" id="extensions-navigation">
+              <strong>خروجی چند گانه&nbsp;&nbsp;</strong>با یک بار تلاش چند خروجی بگیرید 
+            </li> 
+
+            <li class="slide timerr" id="extensions-status">
+              <strong>راحت تر ریبایی را ترسیم کنید&nbsp;&nbsp;</strong>با سادگی هر چه تمام تر برنامه ای زیبا بسازید
+            </li>
+        </ul>
+      <h6>چرا ionic ?</h6>
+      <ul>
+        <li class="slide timerr" id="extensions-goto">
+          <strong>جامعه آموزشی گسترده&nbsp;&nbsp;</strong>با چند جست و جو منابع در دسترس شما است
+        </li>
+        <li class="slide timerr" id="extensions-navigation">
+          <strong>فریمورک ها دیکر چی ؟</strong>فریمورک هایی دیگری در این زمینه هستند که معروف ترینش react native 
+        </li>
+        <li class="slide timerr" id="extensions-menu">
+          <strong>و همین &nbsp;&nbsp;</strong>بله نمیخواهیم جنگی درست کنیم تجربه شخصی هر کس تعیین کننده است
+        </li>
+      </ul>
+        <center> 
+         <img style="width: 70%;" src="img/top.jpg" >
+        </center>
+  </div>
+ </section>
+
+ 
+
+ <section class="slide" id="installation">
+      <h2>راه اندازی محیط توسعه</h2>
+      <div class="bottom" style="direction:ltr;">
+        <p>
+        <pre style="direction:ltr;"><code>
+
+Requirement
+
+$ Install Android Sdk
+$ Install nodeJS >= 6.1
+$ Install Ionic && Cordova
+$ Install Genymotion(Optional)
+$ vscode (Optional)
+
+Windows
+
+$ <a target="_blank" href="http://nodejs.org/download/">Nodejs Download</a>
+$ npm install -g cordova ionic
+$ sudo npm cache clean -f
+$ sudo npm install -g n
+$ sudo n stable
+
+Mac
+
+$ <a target="_blank" href="http://nodejs.org/download/">Nodejs Download</a>
+$ xcode-select --install
+$ npm install -g ios-deploy
+$ npm install -g cordova ionic
+$ sudo npm cache clean -f
+$ sudo npm install -g n
+$ sudo n stable
+
+Linux 
+
+$ sudo apt-get install nodejs
+$ npm install -g cordova ionic
+$ sudo npm cache clean -f
+$ sudo npm install -g n
+$ sudo n stable
+
+        </code></pre>
+        </p>
+    </div>
+  </section>
+  <section class="slide" id="structure">
+      
+      <h2>ساختار برنامه</h2>
+      <ul style="position: absolute;left;margin-top: 9%;left: 27%;">
+        <li style="color: white;">Tabs App</li>
+        <li style="color: white;">Blank App</li>
+        <li style="color: white;">Side menu app</li> 
+      </ul>
+  </section>
+  <section class="slide" id="tabs-app">
+    <h2>ساخت یک برنامه tabs app</h2>
+      <div class="bottom" style="direction:ltr;">
+        <pre>
+          <code>
+              ionic start myApp tabs
+              cd myApp
+              ionic cordova platform add ios 
+              ionic build android
+          </code>
+        </pre>
+    </div>
+  </section>
+  <section class="slide" id="blank-app">
+    <h2>ساخت یک برنامه blank app</h2>
+      <div class="bottom" style="direction:ltr;">
+      
+        <pre>
+          <code>
+            ionic start myApp blank
+            cd myApp
+            ionic platform add android
+            ionic cordova platform add ios 
+            ionic run android
+          </code>
+        </pre>
+
+    </div>
+  </section>
+  <section class="slide" id="sidemenu-app">
+    <h2>ساخت یک برنامه side menu app</h2>
+      <div class="bottom" style="direction:ltr;">
+      
+        <pre>
+          <code>
+            ionic start myApp sidemenu
+            cd myApp
+            ionic cordova platform add ios 
+            ionic run android
+          </code>
+        </pre>
+
+    </div>
+  </section>
+  <section class="slide" id="serve">
+      <h2>چگونه برنامه خود در حالت اجرا ببینم</h2>
+      <div class="bottom" style="direction:ltr;">
+      
+        <pre>
+          <code>
+            ionic serve --lab
+          </code>
+        </pre>
+
+    </div>
+  </section>
+  <section class="slide" id="folder-structure">
+      <h2>ساختار فولدر پروژه</h2>
+      <br><br><br>
+
+      <ul style="position: absolute;left;columns: 2;left: 27%;">
+        <li title="معمولا برای سفارشی سازی دستورات کوردوا و خودکارسازی عملیات ها استفاده میشن. " style="color: white;">hooks</li>
+        <li title="این پوشه ای هست که نسخه های اندروید و ios درش ساخته میشه " style="color: white;">platforms</li>
+        <li title="این پوشه شامل پلاگین های کوردوا است" style="color: white;">plugins</li>
+        <li title="این پوشه برای اضافه کردن چیز هایی مثل آیکون و … به پروژه شما استفاده میشه ." style="color: white;">resources</li>
+        <li title="از اونجایی که هسته آیونیک با Sass ساخته شده ، این فولدر جاییه که فایل Sass شما قرار داره" style="color: white;">scss</li>
+        <li title="آیونیک ساختار پیشفرض خودش رو داخل www اعمال میکنه" style="color: white;">www</li>
+        <li title=" فایل پیکربندی bower هست ." style="color: white;">.bowerrc</li>
+        <li title="فایل پیکربندی ادیتور هست ." style="color: white;">.editorconfig</li>
+        <li style="color: white;">.gitignore</li>
+        <li title=" فایلیه که مشخص میکنه کدوم قسمت از فایل ها باید توسط گیت نادیده گرفته بشن ." style="color: white;">bower.json</li>
+        <li title="استفاده میشه برای ساختن برنامه های خودکار با استفاده از مدیریت تسک gulp" style="color: white;">gulpfile.js</li>
+        <li title="فایل پیکربندی کوردوا." style="color: white;">config.xml</li>
+        <li title="شامل اطلاعاتی درباره برنامه ، متعلقات و افزونه هایی که با استفاده از npm نصب شده اند." style="color: white;">package.json</li>
+      </ul>
+
+    </section>
+
+    <section class="slide bo" id="resource" style="text-align: center;">
+     <h2>منابع</h2>
+      <br><br><br>
+     <p style="color: #4d8df6;">-------------Media-------------</p><br>     
+       <p><a style="color:#FFF;" href="http://www.noisetexturegenerator.com/">noisetexturegenerator.com</a></p><br>
+       <p>فونت خندوانه</p><br>
+       <p>فونت مهدی یار</p><br>
+     <p style="color: #4d8df6;">-------------Learning-------------</p><br>
+       <p><a style="color:#FFF;" href="http://baboon.ir/%D8%B3%D8%A7%D8%AE%D8%AA-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-real-time-%D8%A8%D8%A7-ionic-%D9%88-firebase-%D9%86%D8%B5%D8%A8-%D9%88-%D8%B1%D8%A7%D9%87-%D8%A7%D9%86%D8%AF%D8%A7%D8%B2%DB%8C">baboon.ir</a></p><br>
+        <p><a style="color:#FFF;" href="http://codearena.ir/ionic-%D9%86%D8%B5%D8%A8-%D9%85%D8%AD%DB%8C%D8%B7-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C/
+        ">codearena.ir</a></p><br>
+       <p><a style="color:#FFF;" href="http://www.gajotres.net/ionic-2-installation-guide/">gajotres.net</a></p><br>
+       <br>
+     <p style="color: #4d8df6;">-------------Technology-------------</p><br>
+       <p>deck.js</p><br>
+    </section>
+
+    <section class="slide" id="goodby">
+     <center>
+      <br><br><br>
+      <h5>با تشکر از نگاه شما</h5>
+      <h5>امام علی (ع): در کار پیگیر باشید، زیرا خداوند برای کار مؤمنان<br> پایانی جز مرگ قرار نداده است.(مستدرک الوسائل: 177/130/1)</h5>
+     </center>
+     
+
+    </section>
+
+    <div class="subject_box" id="subject_box">
+        <p id="whatisionicc">✓ ionic چیست</p><br>
+        <p id="how-to-overvieww">✓ مقدمه ای بر ionic</p><br>
+        <p id="whyionic&javascriptt">✓ اصلا چرا javascript و ionic</p><br>
+        <p id="installationn">✓ راه اندازی محیط توسعه</p><br>
+        <p id="structuree">✓ ساختار برنامه</p><br>
+        <p id="servee">✓ چگونه برنامه خود را در حالت اجرا بیبنیم</p><br>
+        <p id="folder-structuree">✓ ساختار فولدر پروژه</p>
+    </div>
+
+    <!-- deck.navigation snippet -->
+    <div aria-role="navigation">
+      <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+      <a href="#" class="deck-next-link" title="Next">&#8594;</a>
+    </div>
+
+    <!-- deck.status snippet -->
+    <p class="deck-status" aria-role="status">
+      <span class="deck-status-current"></span>
+      /
+      <span class="deck-status-total"></span>
+    </p>
+
+    <!-- deck.goto snippet -->
+    <form action="." method="get" class="goto-form">
+      <label for="goto-slide">Go to slide:</label>
+      <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+      <datalist id="goto-datalist"></datalist>
+      <input type="submit" value="Go">
+    </form>
+
+    <div class="container demo-2">
+          <div class="content">
+                    <div id="large-header" class="large-header">
+                        <canvas id="demo-canvas"></canvas>
+                    </div>
+                    <div class="codrops-top clearfix">
+                    </div>
+                </div>
+        </div><!-- /container -->
+            <script src="js/rAF.js"></script>
+            <script src="js/demo-2.js"></script>
+
+    </div>
+
+<script src="../jquery.min.js"></script>
+
+<!-- Deck Core and extensions -->
+<script src="../core/deck.core.js"></script>
+<script src="../extensions/menu/deck.menu.js"></script>
+<script src="../extensions/goto/deck.goto.js"></script>
+<script src="../extensions/status/deck.status.js"></script>
+<script src="../extensions/navigation/deck.navigation.js"></script>
+<script src="../extensions/scale/deck.scale.js"></script>
+
+<script type="text/javascript">
+  
+var timer = setInterval(hideElement, 100);
+
+
+
+function hideElement(){
+    
+    var currentLocation = window.location;
+    if(currentLocation =="http://localhost/t/deck.js/introduction/#Begin"){
+      document.getElementById( 'subject_box' ).style.display = 'none';
+    }
+    else if(currentLocation =="http://localhost/t/deck.js/introduction/"){
+      document.getElementById( 'subject_box' ).style.display = 'none';
+    }
+    else if(currentLocation =="http://localhost/t/deck.js/introduction/#goodby"){
+      document.getElementById( 'subject_box' ).style.display = 'none';
+    }
+    
+    else{
+      document.getElementById( 'subject_box' ).style.display = 'block';
+      if(currentLocation =="http://localhost/t/deck.js/introduction/#whatisionic"){
+        document.getElementById('whatisionicc').style.color="#4d8df6";
+      }
+      else if(currentLocation=="http://localhost/t/deck.js/introduction/#how-to-overview"){
+        document.getElementById('how-to-overvieww').style.color="#4d8df6"; 
+      }
+      else if(currentLocation=="http://localhost/t/deck.js/introduction/#whyionic&javascript"){
+        document.getElementById('whyionic&javascriptt').style.color="#4d8df6"; 
+      }
+      else if(currentLocation =="http://localhost/t/deck.js/introduction/#installation"){
+        document.getElementById('installationn').style.color="#4d8df6";
+      }
+      else if(currentLocation=="http://localhost/t/deck.js/introduction/#structure"){
+        document.getElementById('structuree').style.color="#4d8df6";
+      }else if(currentLocation =="http://localhost/t/deck.js/introduction/#serve"){
+        document.getElementById('servee').style.color="#4d8df6";
+      }else if(currentLocation=="http://localhost/t/deck.js/introduction/#folder-structure"){
+        document.getElementById('folder-structuree').style.color="#4d8df6";
+      }
+      else{
+        
+      }
+    }
+}
+
+</script>
+
+<!-- Initialize the deck -->
+<script>
+$(function() {
+  $.deck('.slide');
+});
+</script>
+</body>
+</html>
