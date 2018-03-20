@@ -413,7 +413,9 @@ var timer = setInterval(hideElement, 100);
 function hideElement(){
     
     var currentLocation = window.location;
-    if(currentLocation =="https://rezaduty.github.io/ionic-present/introduction/#Begin"){
+    var path = window.location.pathname.split( '#' );
+
+    if(path =="Begin"){
       document.getElementById( 'subject_box' ).style.display = 'none';
     }
     else if(currentLocation =="https://rezaduty.github.io/ionic-present/introduction/"){
